@@ -1,38 +1,44 @@
+
+body {
+  font-family: 나눔스퀘어, 'NanumSquare', sans-serif;
+  letter-spacing: 2px;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.LiveContainer{
+  border-radius:0.5em;
+  border:0.5px solid rgba(165, 165, 165, 0.78);
+  height:20vh;
+  margin:10px;
+  background: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Header{
+  background-color: white;
+  border-bottom: 0.5px solid rgba(165, 165, 165, 0.78);
+  height:10vh;
+  display:flex;
+  align-items:center;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  
+}
+.Link{
+  padding:1vw;
+}
+
+.StateCircle{
+  width:1vw;
+  height:1vh;
+}
+
+@media screen and (max-width: 768px) {
+  .Header{
+    display: block;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .LiveContainer{
+    margin:0px;
   }
 }
